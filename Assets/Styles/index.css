@@ -1,0 +1,19 @@
+/* 
+	The Central Perk Styles Sheet -- HOME
+    Filename: index.css
+    
+    Author: Erin Ryan & Nick Riley  
+    Date: 7-24-2020
+ */
+
+/* index styles */
+.home img {
+	height: 55%;
+	width: 55%;
+	padding: 1em;
+	float: right;
+}
+.home p {
+	font-size: 1.2em;
+	padding: .5em;
+}

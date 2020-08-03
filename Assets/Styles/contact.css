@@ -1,0 +1,55 @@
+/* 
+	The Central Perk Styles Sheet
+    Filename: contact.css
+    
+    Author: Erin Ryan & Nick Riley  
+    Date: 7-24-2020
+ */
+
+ /* Contact-info */
+#contact {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+ }
+ #contact .form {
+    float: left;
+    width: 50%;
+ }
+ #contact .form h2,
+ #contact .form p {
+    padding: 0;
+    margin: 1em 0 0.5em;
+ }
+ #contact h3 {
+   margin: 1.4em 0 0.5em;
+ }
+ #contact .group {
+    margin-bottom: 20px;
+    width: auto;
+ }
+ #contact .form label {
+    display: block;
+    margin-bottom: 5px;
+ }
+ #contact .form input,
+ #contact .form textarea {
+     width: 100%;
+     padding: 10px;
+ }
+ #contact .form textarea {
+     height: 200px;
+ }
+ #contact .res-info {
+    float: right ;
+    width: 50%;
+    height: 100%;
+    padding: 0 30px;
+ }
+ #contact .res-info p span {
+    text-decoration: underline;
+ }
+ #contact .res-info img {
+    margin-top: 20px;
+    border-radius: 10px;
+ }

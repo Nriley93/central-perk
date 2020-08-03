@@ -1,0 +1,54 @@
+/* 
+	The Central Perk Styles Sheet
+    Filename: mobile.css
+    
+    Author: Erin Ryan & Nick Riley  
+    Date: 7-24-2020
+ */
+/* Navbar mobile */
+nav.sitenavigation li {
+   display: block;
+}
+nav.sitenavigation li:last-child {
+   margin-bottom: 0;
+} 
+
+/* Order mobile */
+#nameinput,
+#emailinput,
+#streetinput,
+#phoneinput {
+   width: 8em;
+}
+#special {
+   width: 15em;
+}
+.drinks {
+   width: fit-content;
+}
+
+/* Menu mobile */
+.choices-list {
+    float: none;
+    text-align: center;
+}
+.bake,
+ .deli,
+ .coffee {
+    float: none;
+    text-align: center;
+ }
+ .fav-img {
+    float: none;
+ }
+
+/* Contact mobile */
+ #contact .form {
+    float: none;
+    width: auto;
+ }
+ #contact .res-info {
+    float: none ;
+    width: auto;
+    padding: 0 30px;
+ }

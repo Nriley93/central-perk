@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- 
+         Central Perk Contact Us
+         Filename: contact.html
+
+         Author: Erin Ryan and Nick Riley  
+         Date: 7-24-2020
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="Assets/JavaScripts/contact_results.js"></script>
+      <link rel="stylesheet" href="Assets/Styles/main.css" type="text/css">
+      <link rel="stylesheet" href="Assets/Styles/contact.css" type="text/css"/>
+      <link rel="stylesheet" media="screen and (max-width: 425px)" href="Assets/Styles/mobile.css" type="text/css">
+      <link rel="icon" type="image/png" sizes="32x32" href="Assets/Images/favicon-32x32.png">
+      <title>Central-Perk | Contact</title>
+   </head>
+   <body>
+      <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p> 
+      <header>
+         <h1><a href="index.html"><img src="Assets/Images/logo3.png" width="659" height="165" alt="The Central Perk"></a></h1>
+      </header>
+      <nav class="sitenavigation">
+      	<ul>
+         	<li><a href="index.html">Home</a></li>
+         	<li><a href="contact.html">Contact Us</a></li>
+         	<li><a href="menu.html">Menu</a></li>
+         	<li><a href="order.html">Order</a></li>
+      	</ul>
+      </nav>
+      <div class="container">
+        <article id="contact">
+         <div class="form">
+            <h2>Questions for us?</h2>
+            <p>Please fill out the form below to contact us</p>
+            <form action="contact_results.html">
+               <div class="group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" placeholder="*Your Name">
+               </div>
+               <div class="group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="*Email">
+               </div>
+               <div class="group">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" placeholder="*Message"></textarea>
+               </div>
+               <button type="submit" class="btn">Submit</button>
+               <button type="reset" class="btn">Reset</button>
+            </form>
+         </div>
+         <aside class="res-info">
+            <h3>Online Reservation</h3>
+            <p><span>Reservation</span></p><p>(212) 867-5309</p>
+            <p><span>Email</span></p><p>resevation@centralperk.com</p>
+            <h3>General Inquires</h3>
+            <p><span>Address:</span></p><p>199 Lafayette St. Manhattan, NY 10012</p>
+            <p><span>Telephone:</span></p><p>(212) 867-5309</p>
+            <p><span>Email:</span></p><p>contact@restaurant.com</p>
+            <img src="Assets/Images/Central-Perk.jpg" alt=""> 
+         </aside>
+      </article>
+      </div>
+      <footer>
+         <p>199 Lafayette St. &bull; Manhattan, NY 10012 &bull; (212) 867-5309</p>
+      </footer>
+   </body>
+</html>

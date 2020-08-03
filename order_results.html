@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Central-Perk | Order Received</title>
+      <!-- 
+         Central Perk Order Results
+         Filename: order_results.html
+
+         Author: Erin Ryan and Nick Riley  
+         Date: 7-24-2020
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="Assets/Styles/main.css">
+      <link rel="stylesheet" media="screen and (max-width: 425px)" href="Assets/Styles/mobile.css" type="text/css">
+      <link rel="icon" type="image/png" sizes="32x32" href="Assets/Images/favicon-32x32.png">
+   </head>
+   <body>
+      <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p> 
+      <header>
+         <h1><a href="index.html"><img src="Assets/Images/logo3.png" width="659" height="165" alt="The Central Perk"></a></h1>
+      </header>
+      <nav class="sitenavigation">
+      	<ul>
+         	<li><a href="index.html">Home</a></li>
+         	<li><a href="contact.html">Contact Us</a></li>
+         	<li><a href="menu.html">Menu</a></li>
+         	<li><a href="order.html">Order</a></li>
+      	</ul>
+      </nav>
+      <article>
+         <div>
+            <h2 id="contentstart">Your Order Has Been Submitted</h2>            
+            
+            <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+          </script>
+            
+           <!--
+            <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }//
+          </script>
+            
+   -->         
+            
+            
+         </div>
+      </article>
+      <footer>
+         <p>199 Lafayette St. &bull; Manhattan, NY 10012 &bull; (212) 867-5309</p>
+      </footer>
+   </body>
+</html>

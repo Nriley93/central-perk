@@ -1,0 +1,190 @@
+﻿/* 
+	The Central Perk Styles Sheet
+    Filename: main.css
+    
+    Author: Erin Ryan & Nick Riley  
+    Date: 7-24-2020
+ */
+
+/* reset styles */
+* {
+   border: 0;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   width: auto;
+}
+ol, ul {
+	list-style-type: none;
+}
+
+/* document-wide styles */
+html, body {
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+}
+p {
+   line-height: 1.4em;
+   font-size: 1.3em;
+}
+a:link {
+   color: black;
+}
+a:visited {
+   color: #888;
+}
+.btn {
+   display: inline-block;
+   font-size: 18px;
+   color: #F7E7C5;
+   border-radius: 10px;
+   -webkit-transition-duration: 0.2s;
+   transition-duration: 0.2s;
+   -webkit-transition-timing-function: ease-in;
+   transition-timing-function: ease-in;
+   background: #005933;
+   padding: 8px 14px;
+   border: none;
+   cursor: pointer;
+}
+.btn:hover {
+   background-color: #E03325;
+   -webkit-transform: scale(1.2);
+   -webkit-transform: scale(1.2);
+   transform: scale(1.2);
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   color: #F7E7C5;
+   background-color: #34180f;
+   top: 0.4em;
+   left: auto;
+   right: 0.4em;
+   z-index: 2;
+}
+
+/* header section */
+h1 {
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 700;
+   color: #F7E7C5;
+   background-color: white;
+   font-size: 2.4em;
+}
+
+/* site navigation bar */
+nav.sitenavigation {
+   color: #F7E7C5;
+   text-align: center;
+   background-color: #005933;
+}
+nav.sitenavigation li {
+   margin: 0.3em 0.5em;
+   padding: 0.2em 0.4em;
+   display: inline-block;
+   font-size: 1.3em;
+   line-height: 1.4em;
+   border-radius: 10px;
+   -webkit-transition-duration: 0.2s;
+   transition-duration: 0.2s;
+   -webkit-transition-timing-function: ease-in;
+   transition-timing-function: ease-in;
+}
+nav.sitenavigation li:hover {
+   background-color: #E03325;
+   -webkit-transform: scale(1.2);
+   -webkit-transform: scale(1.2);
+   transform: scale(1.2);
+}
+nav.sitenavigation a:link {
+   text-decoration: none;
+   color: #F7E7C5;
+}
+nav.sitenavigation a:visited {
+   color: #e3d4b6;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   color: #F7E7C5;
+}
+
+/* main content */
+.container {
+   margin: 0 auto;
+   padding: 1.4em;
+   background: #492a16;
+   background: url("../Images/coffee2.jpg");
+}
+article {
+   max-width: 680px;
+   margin: 0 auto;
+   padding: 0 3% 1em;
+   background-color: #F7E7C5;
+   overflow: auto;
+}
+h2 {
+   padding: 0.4em 0.4em 0;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 2em;
+   font-weight: 700;
+}
+h3 {
+   font-size: 1.6em;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 700;
+}
+
+
+.home img {
+	height: 70%;
+	width: 60%;
+	padding: 1em;
+	float: right;
+}
+.home p {
+	font-size: 1.2em;
+	padding: .5em;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   width: auto;
+}
+
+
+/* footer section */
+footer {
+   clear: both;
+   padding: 0.6em;
+   background-color: #005933;
+   color: #F7E7C5;
+   text-align: center;
+}
+
+/* print styles */
+@media print {
+   body, h1, article, footer {
+      color: rgb(0,0,0);
+      background: rgb(255,255,255);
+   }
+   body {
+      max-width: 100%;
+   }
+   nav {
+      display: none;
+   }
+}
+@page {
+   margin: 0.75in;
+}

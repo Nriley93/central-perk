@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Central-Perk | Order</title>
+      <!-- 
+         Central Perk Order Page
+         Filename: order.html
+
+         Author: Erin Ryan and Nick Riley  
+         Date: 7-24-2020
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="Assets/JavaScripts/reset.js"></script>
+      <link rel="stylesheet" href="Assets/Styles/main.css">
+      <link rel="stylesheet" href="Assets/Styles/order.css" type="text/css">
+      <link rel="stylesheet" media="screen and (max-width: 425px)" href="Assets/Styles/mobile.css" type="text/css">
+      <link rel="icon" type="image/png" sizes="32x32" href="Assets/Images/favicon-32x32.png">
+   </head>
+   <body>
+      <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p> 
+      <header>
+         <h1><a href="index.html"><img src="Assets/Images/logo3.png" width="659" height="165" alt="The Central Perk"></a></h1>
+      </header>
+      <nav class="sitenavigation">
+      	<ul>
+         	<li><a href="index.html">Home</a></li>
+         	<li><a href="contact.html">Contact Us</a></li>
+         	<li><a href="menu.html">Menu</a></li>
+         	<li><a href="order.html">Order</a></li>
+      	</ul>
+      </nav>
+      <div class="container">
+
+      <article>
+         <div>
+            <h2 id="contentstart">Order</h2>
+            <form action="order_results.html">
+            	<fieldset class="contactinfo">
+            		<legend class="bold">Delivery Information</legend>
+            		<fieldset class="buyer">
+            			<legend>Contact Information</legend>
+            			<label for="nameinput">
+            				Name
+            				<input type="text" name="Name" id="nameinput" placeholder="First and Last Name">
+            			</label>
+            			<label for="emailinput">
+            				Email
+            				<input type="email" name="Email" id="emailinput" placeholder="address@example.com">
+            			</label>
+            			<label for="phoneinput">
+            				Phone
+            				<input type="tel" name="Phone" id="phoneinput" placeholder="">
+            			</label>
+            		</fieldset>
+            		
+            		<fieldset class="location">
+            			<legend>Location</legend>
+            			<label for="streetinput">
+            				Street
+            				<input type="text" name="Street" id="streetinput" placeholder="Street Name" size="50">
+            			</label>
+            			<label for="zipinput">
+            				Zip Code
+            				<input type="text" name="Zip Code" id="zipinput" maxlength="5">
+            			</label>
+            			<label>
+            				New York City, NY, USA
+            			</label>
+            		</fieldset>
+            		
+            		<fieldset class="time">
+            		<legend>Date and Time</legend>
+            			<label for="deliverydaytime">Date and Time</label>
+            			<input type="datetime-local" id="deliverydaytime" name="Day and Time"
+            					value="2020-01-01T12:00"
+       							min="2020-01-01T00:00" max="2023-12-31T00:00">
+       					</fieldset>
+       				</fieldset>
+       				      	
+            	<fieldset class="drinks">
+            		<legend class="bold">Drinks</legend>
+            		<fieldset>
+            			<legend>Coffee and Tea</legend>
+            			<div class="table">
+            				<div class="row">
+            					<label for="darkroast">
+ 			            			<input type="number" id="darkroast" name="Dark Roast Coffee">
+ 			            			Dark Roast Coffee <span>($2.39 - 20 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="icedcoffee">
+ 			            			<input type="number" id="icedcoffee" name="Iced Coffee">
+ 			            			Iced Coffee <span>($2.39 - 15 Cal)</span>
+ 			            		</label></div>
+            				</div>            				
+            				<div class="row">
+            					<label for="lightroast">
+ 			            			<input type="number" id="lightroast" name="Light Roast Coffee">
+ 			            			Light Roast Coffee <span>($2.39 - 20 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="icedlatte">
+ 			            			<input type="number" id="icedlatte" name="Iced Latte">
+ 			            			Iced Latte <span>($3.89 - 160 Cal)</span>
+ 			            		</label></div>
+            				</div>
+            				<div class="row">
+            					<label for="hazelnut">
+ 			            			<input type="number" id="hazelnut" name="Hazelnut Coffee">
+ 			            			Hazelnut Coffee <span>($2.39 - 20 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="hottea">
+ 			            			<input type="number" id="hottea" name="Hot Tea">
+ 			            			Hot Tea <span>($2.39 - 0 Cal)</span>
+ 			            		</label></div>
+            				</div>            				
+            				<div class="row">
+            					<label for="latte">
+ 			            			<input type="number" id="latte" name="Latte">
+ 			            			Latte <span>($3.89 - 160 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="icedtea">
+ 			            			<input type="number" id="icedtea" name="Iced Tea">
+ 			            			Iced Tea <span>($2.39 - 0 Cal)</span>
+ 			            		</label></div>
+            				</div>            				
+            			</div>
+            		</fieldset>
+            		<fieldset>
+            			<legend>Other Drinks</legend>
+            			<div class="table">
+            				<div class="row">
+            					<label for="water">
+ 			            			<input type="number" id="water" name="Bottled Water">
+ 			            			Bottled Water <span>($1.99 - 0 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="lemonade">
+ 			            			<input type="number" id="lemonade" name="Lemonade">
+ 			            			Lemonade <span>($2.59 - 160 Cal)</span>
+ 			            		</label></div>
+ 			            		<div class="c2"><label for="soda">
+ 			            			<input type="number" id="soda" name="Soda">
+ 			            			Soda <span>($2.59 - 290 Cal)</span>
+ 			            		</label></div>
+            				</div>   
+            			</div>
+            		</fieldset>   
+            	</fieldset>     
+            	
+            	<fieldset class="food">
+            		<legend class="bold">Pastries</legend>
+            		<fieldset>
+            			<legend>Bagels</legend>
+            			<div class="table">
+            				<div class="row">
+            					<label for="plainbag">
+ 			            			<input type="number" id="plainbag" name="Plain Bagel">
+ 			            			Plain <span>($1.39 - 280 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="asiagobag">
+ 			            			<input type="number" id="asiagobag" name="Asiago Bagel">
+ 			            			Asiago <span>($1.39 - 320 Cal)</span>
+ 			            		</label></div>
+            				</div>
+            				<div class="row">
+            					<label for="cinnamonbag">
+ 			            			<input type="number" id="cinnamonbag" name="Cinnamon Crunch Bagel">
+ 			            			Cinnamon Crunch <span>($1.39 - 420 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="everythingbag">
+ 			            			<input type="number" id="everythingbag" name="Everything Bagel">
+ 			            			Everything <span>($1.39 - 290 Cal)</span>
+ 			            		</label></div>
+            				</div>
+            				<div class="row">
+            					<label for="blueberrybag">
+ 			            			<input type="number" id="blueberrybag" name="Blueberry Bagel">
+ 			            			Blueberry <span>($1.39 - 330 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="chocchipbag">
+ 			            			<input type="number" id="chocchipbag" name="Chocolate Chip Bagel">
+ 			            			Chocolate Chip <span>($1.39 - 360 Cal)</span>
+ 			            		</label></div>
+            				</div>
+            			</div>
+            		</fieldset>          		
+            		<fieldset class="food">
+            			<legend>Muffins</legend>
+            			<div class="table">
+            				<div class="row">
+ 			            		<label for="chocchipmuf">
+ 			            			<input type="number" id="chocchipmuf" name="Chocolate Chip Muffin">
+ 			            			Chocolate Chip <span>($2.89 - 320 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="blueberrymuf">
+ 			            			<input type="number" id="blueberrymuf" name="Blueberry Muffin">
+ 			            			Blueberry <span>($2.89 - 460 Cal)</span>
+ 			            		</label></div>
+            				</div>
+            				<div class="row">
+            					<label for="pumpkinmuf">
+ 			            			<input type="number" id="pumpkinmuf" name="Pumpkin Muffin">
+ 			            			Pumpkin <span>($2.89 - 570 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="cranoranmuf">
+ 			            			<input type="number" id="cranoranmuf" name="Cranberry Orange Muffin">
+ 			            			Cranberry Orange <span>($2.89 - 480 Cal)</span>
+ 			            		</label></div>
+            				</div>
+            			</div>
+            		</fieldset>
+            	</fieldset>
+            	<fieldset class="food">
+            		<legend class="bold">Food</legend>
+            		<fieldset>
+            			<legend>Sandwiches</legend>
+            			<div class="table">
+            				<div class="row">
+            					<label for="teriyaki">
+ 			            			<input type="number" id="teriyaki" name="Teriyaki Chicken Sandwich">
+ 			            			Teriyaki Chicken Sandwich <span>($9.79 - 870 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="chipotle">
+ 			            			<input type="number" id="chipotle" name="Chipotle Bacon Melt">
+ 			            			Chipotle Bacon Melt <span>($8.19 - 900 Cal)</span>
+ 			            		</label></div>
+            				</div>
+            				<div class="row">
+            					<label for="steak">
+ 			            			<input type="number" id="steak" name="Toasted Steak & White Cheddar Sandwich">
+ 			            			Toasted Steak & White Cheddar Sandwich <span>($10.99 - 870 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="grilled">
+ 			            			<input type="number" id="grilled" name="Grilled Cheese Sandwich">
+ 			            			Grilled Cheese Sandwich <span>($7.69 - 700 Cal)</span>
+ 			            		</label></div>
+            				</div>
+            				<div class="row">
+            					<label for="tuna">
+ 			            			<input type="number" id="tuna" name="Tuna Salad Sandwich">
+ 			            			Tuna Salad Sandwich <span>($7.69 - 740 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="blt">
+ 			            			<input type="number" id="blt" name="Roasted Turkey & Avocado BLT Sandwich">
+ 			            			Roasted Turkey & Avocado BLT Sandwich <span>($10.99 - 690 Cal)</span>
+ 			            		</label></div>
+            				</div>
+            			</div>
+            		</fieldset>
+            		<fieldset>
+            			<legend>Soups and Salads</legend>
+            			<div class="table">
+            				<div class="row">
+            					<label for="chickennoodle">
+ 			            			<input type="number" id="chickennoodle" name="Chicken Noodle Soup">
+ 			            			Chicken Noodle Soup <span>($6.59 - 170 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="cesar">
+ 			            			<input type="number" id="cesar" name="Cesar Salad with Chicken">
+ 			            			Cesar Salad with Chicken <span>($10.19 - 470 Cal)</span>
+ 			            		</label></div>
+            				</div>
+            				<div class="row">
+            					<label for="brocched">
+ 			            			<input type="number" id="brocched" name="Broccoli Cheddar Soup">
+ 			            			Broccoli Cheddar Soup <span>($6.59 - 360 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="bbq">
+ 			            			<input type="number" id="bbq" name="BBQ Chicken Salad">
+ 			            			BBQ Chicken Salad <span>($10.19 - 520 Cal)</span>
+ 			            		</label></div>
+            				</div>
+            				<div class="row">
+            					<label for="tomato">
+ 			            			<input type="number" id="tomato" name="Tomato Soup">
+ 			            			Tomato Soup <span>($6.59 - 340 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="greek">
+ 			            			<input type="number" id="greek" name="Greek Salad" min="0" max="100">
+ 			            			Greek Salad <span>($7.69 - 410 Cal)</span>
+ 			            		</label></div>
+            				</div>
+            				<div class="row">
+            					<label for="french">
+ 			            			<input type="number" id="french" name="French Onion Soup">
+ 			            			French Onion Soup <span>($6.59 - 310 Cal)</span>
+ 			            		</label>
+ 			            		<div class="c2"><label for="house">
+ 			            			<input type="number" id="house" name="House Salad">
+ 			            			House Salad <span>($7.69 - 300 Cal)</span>
+ 			            		</label></div>
+            				</div>
+            			</div>
+            		</fieldset>
+            	</fieldset>
+            	<fieldset class="specialinst">
+            		<legend>Special Instructions</legend>
+            		<label for="special">
+            			No pickles? Sauce on the side? Cream and sugar? Let us know here!
+            			<textarea name="Special Instructions" id="special" rows="4" cols="55"></textarea>
+            		</label>
+            	</fieldset>
+            	<fieldset class="buttons">
+            		<input type="submit" class="btn" value="Submit">
+            		<input type="reset" class="btn" value="Reset">
+            	</fieldset>           
+            </form>
+         </div>
+      </article>
+      </div>
+      <footer>
+         <p>199 Lafayette St. &bull; Greenwich Village, NY 10012 &bull; (212) 867-5309</p>
+      </footer>
+   </body>
+</html>
